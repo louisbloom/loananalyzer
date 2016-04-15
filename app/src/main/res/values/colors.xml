@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <color name="eap_good">#4CAF50</color>
+    <color name="eap_normal">#2196F3</color>
+    <color name="eap_ugly">#FF9800</color>
+    <color name="eap_bad">#F44336</color>
+    <color name="color_background">#EEEEEE</color>
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="accent">#00BCD4</color>
+    <color name="accent_light">#E0F7FA</color>
+</resources>

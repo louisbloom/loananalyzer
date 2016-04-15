@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <declare-styleable name="TermPicker">
+        <attr name="intervalType" format="enum">
+            <enum name="yearly" value="0"/>
+            <enum name="monthly" value="1"/>
+            <enum name="weekly" value="2"/>
+            <enum name="daily" value="3"/>
+        </attr>
+        <attr name="intervalTypeTimes" format="integer"/>
+        <attr name="intervals" format="integer"/>
+    </declare-styleable>
+</resources>

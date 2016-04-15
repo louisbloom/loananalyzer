@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <declare-styleable name="ScheduleItem">
+        <attr name="text1" format="string"/>
+        <attr name="text2" format="string"/>
+        <attr name="text3" format="string"/>
+        <attr name="text4" format="string"/>
+        <attr name="textAppearance1" format="reference"/>
+        <attr name="textAppearance2" format="reference"/>
+        <attr name="textAppearance3" format="reference"/>
+        <attr name="textAppearance4" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,16 @@
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    <item name="fragment_schedule" type="layout">@layout/fragment_schedule</item>
+    -->
+</resources>

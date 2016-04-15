@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <declare-styleable name="SquaredTextView">
+        <attr name="circle" format="color"/>
+    </declare-styleable>
+</resources>

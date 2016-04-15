@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Widget.MyApp.Spinner" parent="AppTheme">
+        <item name="android:dropDownListViewStyle">
+            @style/Widget.MyApp.Spinner.Capped
+        </item>
+    </style>
+
+    <style name="Widget.MyApp.Spinner.Capped" parent="Widget.AppCompat.ListView">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Dark.Caps" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.Text.Dark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>

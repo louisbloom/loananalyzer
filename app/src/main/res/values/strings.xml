@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<resources>
+    <string name="app_name">Loan Analyzer</string>
+    <string name="loan_analyzer">Loan Analyzer</string>
+    <string name="principal">Principal</string>
+    <string name="loan_type">Type</string>
+    <string name="date">Date</string>
+    <string name="interest">Interest</string>
+    <string name="balance">Balance</string>
+    <string name="schedule">Schedule</string>
+    <string name="problem_with">Problem with %1$s</string>
+    <string name="simple_interest">Simple Interest</string>
+    <string name="precomputed">Precomputed</string>
+    <string name="periodic_rate">Periodic rate</string>
+    <string name="rule78">Rule of 78</string>
+    <string name="annual_rate">Annual rate</string>
+    <string name="view">View</string>
+    <string name="editor">Editor</string>
+    <string name="save">Save</string>
+    <string name="enter_name_of_loan">Enter name of the loan</string>
+    <string name="more">More</string>
+    <string name="amount">Amount</string>
+    <string name="every">Every</string>
+    <string name="times">times</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="help">Help</string>
+    <string name="payment_fmt">Every %1$s %2$s</string>
+    <string name="term_fmt">Every %1$s; %2$s</string>
+    <string name="loan_type_fmt">%1$s</string>
+    <string name="eap_fmt">EAP is %1$s</string>
+    <string name="principal_fmt">Principal is %1$s</string>
+    <string name="term">Term</string>
+    <string name="first_payment">First amount</string>
+    <string name="goto_now">Goto now</string>
+    <string name="fee">Fee</string>
+    <string name="savings_fmt">Savings %1$,.2f</string>
+    <string name="rebate_fmt">Rebate %1$,.2f</string>
+    <string name="name_of_the_loan_cd">Name of the loan</string>
+    <string name="close_the_editor_cd">Close the editor</string>
+    <string name="field_name">name</string>
+    <string name="field_principal">principal</string>
+    <string name="field_term">term</string>
+    <string name="field_amount">amount</string>
+    <string name="field_periodic_rate">periodic rate</string>
+    <string name="field_annual_rate">annual rate</string>
+    <string name="field_fee">fee</string>
+    <string name="field_computational">the numbers</string>
+    <string name="duration">%1$d/%2$d</string>
+
+    <plurals name="plural_n_years">
+        <item quantity="one">year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+
+    <plurals name="plural_n_months">
+        <item quantity="one">month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+
+    <plurals name="plural_n_weeks">
+        <item quantity="one">week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+
+    <plurals name="plural_n_days">
+        <item quantity="one">day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
+    <plurals name="n_times">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d times</item>
+    </plurals>
+
+    <plurals name="times">
+        <item quantity="one">time</item>
+        <item quantity="other">times</item>
+    </plurals>
+
+    <plurals name="years">
+        <item quantity="one">year</item>
+        <item quantity="other">years</item>
+    </plurals>
+
+    <plurals name="months">
+        <item quantity="one">month</item>
+        <item quantity="other">months</item>
+    </plurals>
+
+    <plurals name="weeks">
+        <item quantity="one">week</item>
+        <item quantity="other">weeks</item>
+    </plurals>
+
+    <plurals name="days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+
+    <string-array name="interval_types">
+        <item>yearly</item>
+        <item>monthly</item>
+        <item>weekly</item>
+        <item>daily</item>
+    </string-array>
+
+    <string-array name="loan_types">
+        <item>@string/simple_interest</item>
+        <item>@string/precomputed</item>
+        <item>@string/principal</item>
+        <item>@string/rule78</item>
+    </string-array>
+
+    <string-array name="payment_types">
+        <item>@string/amount</item>
+        <item>@string/annual_rate</item>
+        <item>@string/periodic_rate</item>
+    </string-array>
+
+</resources>

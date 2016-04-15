@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Thomas Christensen <christensenthomas@gmail.com>
+  ~
+  ~ All right reserved.
+  -->
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    android:id="@+id/slider"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:umanoPanelHeight="?android:actionBarSize"
+    tools:context=".activities.ScheduleActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:theme="@style/ThemeOverlay.AppCompat.Text.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:actionBarSize">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <thomasc.loananalyzer.widgets.SquaredTextView
+                    android:id="@+id/eap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/background_circle"
+                    android:gravity="center"
+                    android:minWidth="60sp"
+                    tools:text="32.10%"/>
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/eap"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/principal"
+                    android:layout_toRightOf="@+id/space"
+                    android:layout_toStartOf="@+id/principal"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    tools:text="Simple Loan"/>
+
+                <TextView
+                    android:id="@+id/principal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    tools:text="10,000.00"/>
+
+                <TextView
+                    android:id="@+id/term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type"
+                    android:layout_toLeftOf="@+id/payment"
+                    android:layout_toRightOf="@+id/space"
+                    android:layout_toStartOf="@+id/payment"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:text="Every month 10 times"/>
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/type"
+                    android:singleLine="true"
+                    tools:text="1,000.00"/>
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment"
+                    android:layout_toRightOf="@+id/space"
+                    android:singleLine="true"
+                    tools:text="57/72"/>
+
+            </RelativeLayout>
+
+            <thomasc.loananalyzer.widgets.ScheduleItem
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.Caps"
+                app:text1="@string/date"
+                app:text2="@string/principal"
+                app:text3="@string/interest"
+                app:text4="@string/balance"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_holder1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_holder2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

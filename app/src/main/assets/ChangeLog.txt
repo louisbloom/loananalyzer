@@ -1,0 +1,16 @@
+0.3.0
+
+- Improved calculator and Lollipop support.
+
+0.2.2
+
+- Wide display (480dp) support for annuity loanViewerFragment.
+
+0.2.1
+
+- Better layout and support for smaller screens.
+- Updated icon.
+
+0.2
+
+- Updated design of annuity loanViewerFragment.

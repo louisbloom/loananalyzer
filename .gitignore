@@ -1,0 +1,12 @@
+.idea/
+.gradle
+/build
+/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
