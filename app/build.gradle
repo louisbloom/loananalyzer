@@ -12,8 +12,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 22
-        versionName '0.6.1'
+        versionCode 23
+        versionName '0.6.2'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -21,6 +21,8 @@ android {
     }
     dexOptions {
         incremental false
+    }
+    productFlavors {
     }
 }
 
