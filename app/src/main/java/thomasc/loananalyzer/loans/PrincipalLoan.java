@@ -38,12 +38,14 @@ public class PrincipalLoan extends BaseLoan {
 
             case ANNUAL_RATE:
                 setPeriodicRate(getAnnualRate() / getPeriodsPerYear());
-                setAmount((getPrincipal() / getIntervals()) * (1 + getPeriodicRate()));
+                setAmount((getPrincipal() / getIntervals()) +
+                          (getPrincipal() * getPeriodicRate()));
                 break;
 
             case PERIODIC_RATE:
                 setAnnualRate(getPeriodicRate() * getPeriodsPerYear());
-                setAmount((getPrincipal() / getIntervals()) * (1 + getPeriodicRate()));
+                setAmount((getPrincipal() / getIntervals()) +
+                          (getPrincipal() * getPeriodicRate()));
                 break;
         }
 
