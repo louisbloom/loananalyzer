@@ -66,11 +66,6 @@ public class SimpleLoan extends BaseLoan {
                 break;
         }
 
-        setEap(LoanMath.calcPeriodicRate(
-                getPrincipal(),
-                getAmount() + getPeriodicFee(),
-                getIntervals()) * getPeriodsPerYear());
-
         return LoanError.SUCCESS;
     }
 

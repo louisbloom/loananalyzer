@@ -120,8 +120,6 @@ public interface Loan {
 
     double getEap();
 
-    void setEap(double eap);
-
     List<Payment> getPayments();
 
     double getRebate(int n);

@@ -14,6 +14,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import thomasc.loananalyzer.common.LoanMath;
 import thomasc.loananalyzer.db.LoanReaderContract.LoanEntry;
 
 public class BaseLoan implements Loan {
@@ -33,9 +34,6 @@ public class BaseLoan implements Loan {
     private double rate = 0;
     private double prate = 0;
     private double periodicFee = 0;
-
-    // No serialized
-    private double eap = 0;
 
     @Override
     public Bundle toBundle() {
@@ -369,12 +367,7 @@ public class BaseLoan implements Loan {
 
     @Override
     public double getEap() {
-        return eap;
-    }
-
-    @Override
-    public void setEap(double eap) {
-        this.eap = eap;
+        return LoanMath.rateToApr(getAnnualRate(), (int) getPeriodsPerYear());
     }
 
     @Override
