@@ -40,21 +40,19 @@ public class SimpleLoan extends BaseLoan {
 
         switch (getPaymentType()) {
             case AMOUNT:
-                setAnnualRate(LoanMath.calcPeriodicRate(
+                setPeriodicRate(LoanMath.calcPeriodicRate(
                         getPrincipal(),
                         getAmount(),
-                        getIntervals()
-                        ) * getPeriodsPerYear());
-                setPeriodicRate(getAnnualRate() / getPeriodsPerYear());
+                        getIntervals()));
+                setAnnualRate(getPeriodicRate() * getPeriodsPerYear());
                 break;
 
             case ANNUAL_RATE:
-                double r = getAnnualRate() / getPeriodsPerYear();
+                setPeriodicRate(getAnnualRate() / getPeriodsPerYear());
                 setAmount(LoanMath.calcAmountPerPeriod(
-                        r,
+                        getAnnualRate() / getPeriodsPerYear(),
                         getPrincipal(),
                         getIntervals()));
-                setPeriodicRate(getAnnualRate() / getPeriodsPerYear());
                 break;
 
             case PERIODIC_RATE:
