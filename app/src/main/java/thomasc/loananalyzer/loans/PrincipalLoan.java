@@ -87,4 +87,12 @@ public class PrincipalLoan extends BaseLoan {
 
         return payments;
     }
+
+    @Override
+    public double getEap() {
+        // Turn this awkward rate into a simple interest rate to calculate the APR.
+        double rate = LoanMath.calcPeriodicRate(getPrincipal(), getAmount(), getIntervals())
+                      * getPeriodsPerYear();
+        return LoanMath.rateToApr(rate, (int) getPeriodsPerYear());
+    }
 }
